@@ -56,8 +56,11 @@ export function PricingSection() {
   ];
 
   return (
-    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-      <div className="container mx-auto">
+    <section id="pricing" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             シンプルで分かりやすい料金プラン
@@ -71,32 +74,33 @@ export function PricingSection() {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative ${
+              className={`relative group transition-all duration-300 ${
                 plan.popular
-                  ? 'border-primary border-2 shadow-xl scale-105'
-                  : 'border-2'
-              }`}
+                  ? 'border-primary/50 border-2 shadow-xl shadow-primary/10 md:scale-105 bg-gradient-to-b from-card to-card/50'
+                  : 'border-2 border-border/50 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 bg-card/50'
+              } backdrop-blur-sm`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                  <span className="bg-gradient-to-r from-primary to-green-600 text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
                     人気プラン
                   </span>
                 </div>
               )}
-              <CardHeader className="text-center pb-8">
+              <div className={plan.popular ? 'absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-lg' : ''} />
+              <CardHeader className="text-center pb-8 relative z-10">
                 <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
                 <CardDescription className="text-sm mb-6">
                   {plan.description}
                 </CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">{plan.price}</span>
+                  <span className="text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">{plan.price}</span>
                   {plan.period && (
                     <span className="text-muted-foreground">{plan.period}</span>
                   )}
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative z-10">
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
@@ -106,7 +110,11 @@ export function PricingSection() {
                   ))}
                 </ul>
                 <Button
-                  className="w-full"
+                  className={`w-full transition-all duration-300 ${
+                    plan.popular
+                      ? 'bg-gradient-to-r from-primary to-green-600 hover:from-primary/90 hover:to-green-600/90 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40'
+                      : 'hover:bg-primary/10'
+                  }`}
                   variant={plan.popular ? 'default' : 'outline'}
                   size="lg"
                 >

@@ -21,7 +21,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <MessageSquare className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold">AI Sales Assistant</span>
+            <span className="text-xl font-bold">Makasete AI</span>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">

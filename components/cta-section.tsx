@@ -3,15 +3,23 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export function CTASection() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-background to-primary/5">
-      <div className="container mx-auto">
+    <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-green-500/10 animate-gradient" />
+      <div className="absolute top-10 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
+
+      <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-6">
-            <Sparkles className="h-8 w-8 text-primary" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary/30 to-green-500/20 mb-6 border border-primary/30 animate-float">
+            <Sparkles className="h-8 w-8 text-primary animate-pulse" />
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            今すぐAIで売上アップを実現
+            今すぐAIで
+            <span className="bg-gradient-to-r from-primary via-green-400 to-primary bg-clip-text text-transparent animate-gradient">
+              売上アップ
+            </span>
+            を実現
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -20,11 +28,11 @@ export function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button size="lg" className="text-base px-8 group">
+            <Button size="lg" className="text-base px-8 group bg-gradient-to-r from-primary to-green-600 hover:from-primary/90 hover:to-green-600/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 duration-300">
               無料で始める
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="text-base px-8">
+            <Button size="lg" variant="outline" className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all">
               資料をダウンロード
             </Button>
           </div>

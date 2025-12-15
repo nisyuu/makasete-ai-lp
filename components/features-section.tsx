@@ -36,10 +36,11 @@ export function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">
+    <section id="features" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">
             充実の機能でECサイトを強化
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -51,9 +52,9 @@ export function FeaturesSection() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+              <Card key={index} className="border-2 border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group bg-card/50 backdrop-blur-sm hover:-translate-y-1">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
                     <Icon className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-xl">{feature.title}</CardTitle>

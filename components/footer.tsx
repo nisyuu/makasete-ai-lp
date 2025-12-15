@@ -47,7 +47,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <MessageSquare className="h-8 w-8 text-primary" />
-              <span className="text-lg font-bold">AI Sales Assistant</span>
+              <span className="text-lg font-bold">Makasete AI</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               ECサイトの売上を最大化する
@@ -77,7 +77,7 @@ export function Footer() {
 
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-muted-foreground">
-            © 2024 AI Sales Assistant. All rights reserved.
+            © 2024 Makasete AI. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a
