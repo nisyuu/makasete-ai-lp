@@ -21,7 +21,7 @@ export function HeroSection() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-fade-in">
             AIが24時間、
             <br />
-            <span className="bg-gradient-to-r from-primary via-green-400 to-primary bg-clip-text text-transparent animate-gradient">
+            <span className="bg-gradient-to-r from-primary via-blue-400 to-primary bg-clip-text text-transparent animate-gradient">
               お客様の質問に対応
             </span>
           </h1>
@@ -31,7 +31,7 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <Button size="lg" className="text-base px-8 group bg-gradient-to-r from-primary to-green-600 hover:from-primary/90 hover:to-green-600/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 duration-300">
+            <Button size="lg" className="text-base px-8 group bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 duration-300">
               無料で始める
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -42,17 +42,17 @@ export function HeroSection() {
           </div>
 
           <div className="relative rounded-xl overflow-hidden border border-primary/20 shadow-2xl shadow-primary/10 animate-scale-in" style={{ animationDelay: '0.6s' }}>
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-green-500/10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10" />
             <div className="aspect-video bg-gradient-to-br from-slate-900 via-black to-slate-800 flex items-center justify-center relative">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.1)_0%,transparent_100%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1)_0%,transparent_100%)]" />
               <div className="text-center p-8 relative z-10 animate-float">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-green-500/20 flex items-center justify-center border border-primary/30 backdrop-blur-sm">
+                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-blue-500/20 flex items-center justify-center border border-primary/30 backdrop-blur-sm">
                   <Play className="h-12 w-12 text-primary" />
                 </div>
                 <p className="text-muted-foreground">チャットボットのデモ画像</p>
               </div>
               <div className="absolute top-4 right-4 w-2 h-2 bg-primary rounded-full animate-ping" />
-              <div className="absolute bottom-4 left-4 w-2 h-2 bg-green-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }} />
+              <div className="absolute bottom-4 left-4 w-2 h-2 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }} />
             </div>
           </div>
         </div>

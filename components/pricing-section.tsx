@@ -82,7 +82,7 @@ export function PricingSection() {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-                  <span className="bg-gradient-to-r from-primary to-green-600 text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+                  <span className="bg-gradient-to-r from-primary to-blue-600 text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
                     人気プラン
                   </span>
                 </div>
@@ -112,7 +112,7 @@ export function PricingSection() {
                 <Button
                   className={`w-full transition-all duration-300 ${
                     plan.popular
-                      ? 'bg-gradient-to-r from-primary to-green-600 hover:from-primary/90 hover:to-green-600/90 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40'
+                      ? 'bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40'
                       : 'hover:bg-primary/10'
                   }`}
                   variant={plan.popular ? 'default' : 'outline'}
