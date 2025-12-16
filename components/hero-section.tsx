@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
@@ -45,18 +46,15 @@ export function HeroSection() {
           </div>
 
           <div className="relative rounded-xl overflow-hidden border border-primary/20 shadow-2xl shadow-primary/10 animate-scale-in" style={{ animationDelay: '0.6s' }}>
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10" />
-            <div className="aspect-video bg-gradient-to-br from-slate-900 via-black to-slate-800 flex items-center justify-center relative">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1)_0%,transparent_100%)]" />
-              <div className="text-center p-8 relative z-10 animate-float">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-blue-500/20 flex items-center justify-center border border-primary/30 backdrop-blur-sm">
-                  <Play className="h-12 w-12 text-primary" />
-                </div>
-                <p className="text-muted-foreground">チャットボットのデモ画像</p>
-              </div>
-              <div className="absolute top-4 right-4 w-2 h-2 bg-primary rounded-full animate-ping" />
-              <div className="absolute bottom-4 left-4 w-2 h-2 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }} />
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10 z-10" />
+            <Image
+              src="/スクリーンショット_2025-12-16_13.52.55.png"
+              alt="AI店員 福蔵デモ画面"
+              width={1200}
+              height={675}
+              className="w-full h-auto object-cover"
+              priority
+            />
           </div>
         </div>
       </div>
