@@ -16,7 +16,10 @@ export const metadata: Metadata = {
     locale: 'ja_JP',
     images: [
       {
-        url: 'https://bolt.new/static/og_default.png',
+        url: '/スクリーンショット_2025-12-16_16.19.17.png',
+        width: 1200,
+        height: 630,
+        alt: 'Makasete AI - ECサイトの売上を最大化するAIチャットボット',
       },
     ],
   },
@@ -26,7 +29,8 @@ export const metadata: Metadata = {
     description: 'AIチャットボットで24時間お客様対応。簡単導入で売上アップを実現',
     images: [
       {
-        url: 'https://bolt.new/static/og_default.png',
+        url: '/スクリーンショット_2025-12-16_16.19.17.png',
+        alt: 'Makasete AI - ECサイトの売上を最大化するAIチャットボット',
       },
     ],
   },
