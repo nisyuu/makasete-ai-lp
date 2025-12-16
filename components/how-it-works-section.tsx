@@ -43,7 +43,8 @@ export function HowItWorksSection() {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            たった3ステップで導入完了
+            導入イメージ
+            <span className="text-muted-foreground font-normal">（準備中）</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             特別な技術知識は不要。誰でも簡単にAIチャットボットを導入できます
