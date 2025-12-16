@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Makasete AI - ECサイトの売上を最大化するAIチャットボット',
-  description: '音声とテキストで対応するAI販売員が、商品の相談から購入までをサポート。scriptタグを1行追加するだけで、今すぐECサイトに導入できます。個人事業主や中小企業に最適なソリューションです。',
+  description: '音声とテキストで対応するAI販売員が、商品の相談から購入までをサポート。簡単にECサイトへ導入できます。個人事業主や中小企業に最適なソリューションです。',
   keywords: ['AIチャットボット', 'ECサイト', 'AI販売員', '音声チャット', '売上向上', 'カスタマーサポート'],
   openGraph: {
     title: 'Makasete AI - ECサイトの売上を最大化',
