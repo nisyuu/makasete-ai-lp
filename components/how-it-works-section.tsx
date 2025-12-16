@@ -20,7 +20,7 @@ export function HowItWorksSection() {
       icon: Table,
       title: '商品データを入力',
       description: 'Googleスプレッドシートに商品情報を入力。商品名、価格、説明、画像URLなどを記載します。',
-      details: 'テンプレートを用意しているので、コピー&ペーストで簡単に設定できます。',
+      details: '商品情報は自由にカスタマイズできます。',
     },
     {
       number: '03',
