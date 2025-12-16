@@ -24,9 +24,6 @@ export function DemoSection() {
               <p className="text-muted-foreground mb-6">
                 商品に関する質問をテキストで入力すると、AIが即座に的確な回答を返します。サイズ、色、在庫状況など、あらゆる質問に対応。
               </p>
-              <div className="flex items-center text-sm text-primary font-medium">
-                <span>デモで試す</span>
-              </div>
             </div>
 
             <div className="bg-background rounded-xl p-8 border-2 hover:border-primary/50 transition-all">
