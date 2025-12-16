@@ -23,8 +23,8 @@ export function CTASection() {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            AIチャットボットを無料で試してみてください。
-            セットアップが簡単で、今すぐ始められます。
+            AIチャットボットを導入して、顧客対応を効率化できます。
+            セットアップが簡単で、すぐに運用を開始できます。
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -34,11 +34,9 @@ export function CTASection() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
-            <a href="https://dokusho-fukuzo.netlify.app/" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all">
-                デモを見る
-              </Button>
-            </a>
+            <Button size="lg" variant="outline" disabled className="text-base px-8 border-primary/20 text-muted-foreground opacity-50 cursor-not-allowed">
+              デモを見る（準備中）
+            </Button>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
