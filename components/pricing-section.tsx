@@ -18,7 +18,7 @@ export function PricingSection() {
       popular: false,
     },
     {
-      name: 'スターター',
+      name: 'おまかせプラン',
       description: '個人事業主・小規模ECサイト向け',
       price: 'お値段準備中',
       period: '',
@@ -30,23 +30,7 @@ export function PricingSection() {
         '分析レポート（月次）',
       ],
       cta: 'お問い合わせ',
-      popular: false,
-    },
-    {
-      name: 'ビジネス',
-      description: '中小企業・成長中のECサイト向け',
-      price: 'お値段準備中',
-      period: '',
-      features: [
-        '月間10,000件までの対応',
-        'テキスト + 音声チャット対応',
-        '高度な商品データ連携',
-        '優先メールサポート',
-        '分析レポート（週次）',
-        'カスタムデザイン設定',
-        'A/Bテスト機能',
-      ],
-      cta: 'お問い合わせ',
+      ctaDisabled: true,
       popular: false,
     },
   ];
@@ -66,7 +50,7 @@ export function PricingSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
             <Card
               key={index}
@@ -93,7 +77,16 @@ export function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                {plan.ctaHref ? (
+                {plan.ctaDisabled ? (
+                  <Button
+                    disabled
+                    className="w-full transition-all duration-300 opacity-50 cursor-not-allowed"
+                    variant="outline"
+                    size="lg"
+                  >
+                    {plan.cta}（準備中）
+                  </Button>
+                ) : plan.ctaHref ? (
                   <a href={plan.ctaHref} target="_blank" rel="noopener noreferrer">
                     <Button
                       className="w-full transition-all duration-300 hover:bg-primary/10"
