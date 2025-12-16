@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Play, Sparkles } from 'lucide-react';
 
 export function CTASection() {
   return (
@@ -34,9 +35,12 @@ export function CTASection() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
-            <Button size="lg" variant="outline" disabled className="text-base px-8 border-primary/20 text-muted-foreground opacity-50 cursor-not-allowed">
-              デモを見る（準備中）
-            </Button>
+            <Link href="https://dokusho-fukuzo.netlify.app/books" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all">
+                <Play className="mr-2 h-5 w-5" />
+                デモを見る
+              </Button>
+            </Link>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
