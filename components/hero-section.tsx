@@ -37,7 +37,7 @@ export function HeroSection() {
               無料で始める
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Link href="https://dokusho-fukuzo.netlify.app/books" target="_blank" rel="noopener noreferrer">
+            <Link href="https://dokusho-fukuzo.netlify.app/" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all">
                 <Play className="mr-2 h-5 w-5" />
                 デモを見る
