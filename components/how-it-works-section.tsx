@@ -12,7 +12,7 @@ export function HowItWorksSection() {
       number: '01',
       icon: UserPlus,
       title: 'アカウント登録',
-      description: 'わずか3分で登録完了。クレジットカード不要で無料トライアルを開始できます。',
+      description: 'わずか3分で登録完了。',
       details: '管理画面でチャットボットの設定や分析データを確認できます。',
     },
     {
