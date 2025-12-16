@@ -49,7 +49,7 @@ export function DemoSection() {
               <ExternalLink className="ml-2 h-5 w-5" />
             </Button>
             <p className="text-sm text-muted-foreground mt-4">
-              実際のECサイトでの動作を体験できます
+              　デモサイトで動作を体験できます
             </p>
           </div>
         </div>
