@@ -17,12 +17,9 @@ export function Footer() {
       ],
     },
     company: {
-      title: '会社情報',
+      title: '開発者情報',
       links: [
-        { label: '会社概要', href: '#' },
-        { label: 'ブログ', href: '#' },
-        { label: '採用情報', href: '#' },
-        { label: 'プレスリリース', href: '#' },
+        { label: '会社概要', href: 'https://x.com/nishilyuu' },
       ],
     },
     legal: {
