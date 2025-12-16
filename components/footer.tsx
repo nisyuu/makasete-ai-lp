@@ -22,15 +22,15 @@ export function Footer() {
         { label: '会社概要', href: 'https://x.com/nishilyuu' },
       ],
     },
-    legal: {
-      title: '法的情報',
-      links: [
-        { label: '利用規約', href: '#' },
-        { label: 'プライバシーポリシー', href: '#' },
-        { label: '特定商取引法', href: '#' },
-        { label: 'セキュリティ', href: '#' },
-      ],
-    },
+    // legal: {
+    //   title: '法的情報',
+    //   links: [
+    //     { label: '利用規約', href: '#' },
+    //     { label: 'プライバシーポリシー', href: '#' },
+    //     { label: '特定商取引法', href: '#' },
+    //     { label: 'セキュリティ', href: '#' },
+    //   ],
+    // },
   };
 
   return (
@@ -70,7 +70,7 @@ export function Footer() {
 
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-muted-foreground">
-            © 2024 Makasete AI. All rights reserved.
+            © 2025 Makasete AI. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a
