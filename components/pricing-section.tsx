@@ -23,11 +23,7 @@ export function PricingSection() {
       price: 'お値段準備中',
       period: '',
       features: [
-        '月間1,000件までの対応',
-        'テキストチャット対応',
-        '基本的な商品データ連携',
-        'メールサポート',
-        '分析レポート（月次）',
+        '機能準備中',
       ],
       cta: 'お問い合わせ',
       ctaHref: 'https://docs.google.com/forms/d/e/1FAIpQLScKzEYvBRXxZnmciBOWAoq9hTjQjswoxDAqkiIVHfw6mR2Ynw/viewform?usp=dialog',
