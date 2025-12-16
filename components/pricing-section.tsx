@@ -30,7 +30,7 @@ export function PricingSection() {
         '分析レポート（月次）',
       ],
       cta: 'お問い合わせ',
-      ctaDisabled: true,
+      ctaHref: 'https://docs.google.com/forms/d/e/1FAIpQLScKzEYvBRXxZnmciBOWAoq9hTjQjswoxDAqkiIVHfw6mR2Ynw/viewform?usp=dialog',
       popular: false,
     },
   ];
@@ -77,16 +77,7 @@ export function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                {plan.ctaDisabled ? (
-                  <Button
-                    disabled
-                    className="w-full transition-all duration-300 opacity-50 cursor-not-allowed"
-                    variant="outline"
-                    size="lg"
-                  >
-                    {plan.cta}（準備中）
-                  </Button>
-                ) : plan.ctaHref ? (
+                {plan.ctaHref ? (
                   <a href={plan.ctaHref} target="_blank" rel="noopener noreferrer">
                     <Button
                       className="w-full transition-all duration-300 hover:bg-primary/10"
