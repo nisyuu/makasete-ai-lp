@@ -5,10 +5,23 @@ import { Check } from 'lucide-react';
 export function PricingSection() {
   const plans = [
     {
+      name: 'でまかせプラン',
+      description: '開発者向け',
+      price: '無料',
+      period: '',
+      features: [
+        'オープンソースからご自身で構築',
+        '自由にカスタマイズ可能',
+      ],
+      cta: '無料で始める',
+      ctaHref: 'https://github.com/nisyuu/makasete-ai',
+      popular: false,
+    },
+    {
       name: 'スターター',
       description: '個人事業主・小規模ECサイト向け',
-      price: '¥9,800',
-      period: '/月',
+      price: 'お値段準備中',
+      period: '',
       features: [
         '月間1,000件までの対応',
         'テキストチャット対応',
@@ -16,14 +29,14 @@ export function PricingSection() {
         'メールサポート',
         '分析レポート（月次）',
       ],
-      cta: '無料で始める',
+      cta: 'お問い合わせ',
       popular: false,
     },
     {
       name: 'ビジネス',
       description: '中小企業・成長中のECサイト向け',
-      price: '¥29,800',
-      period: '/月',
+      price: 'お値段準備中',
+      period: '',
       features: [
         '月間10,000件までの対応',
         'テキスト + 音声チャット対応',
@@ -32,23 +45,6 @@ export function PricingSection() {
         '分析レポート（週次）',
         'カスタムデザイン設定',
         'A/Bテスト機能',
-      ],
-      cta: '無料トライアル',
-      popular: true,
-    },
-    {
-      name: 'エンタープライズ',
-      description: '大規模ECサイト・複数店舗運営向け',
-      price: 'お問い合わせ',
-      period: '',
-      features: [
-        '無制限の対応件数',
-        'すべての機能が利用可能',
-        '専任サポート担当',
-        'SLA保証',
-        'カスタム機能開発',
-        'オンボーディング支援',
-        'API連携サポート',
       ],
       cta: 'お問い合わせ',
       popular: false,
@@ -74,20 +70,8 @@ export function PricingSection() {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative group transition-all duration-300 ${
-                plan.popular
-                  ? 'border-primary/50 border-2 shadow-xl shadow-primary/10 md:scale-105 bg-gradient-to-b from-card to-card/50'
-                  : 'border-2 border-border/50 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 bg-card/50'
-              } backdrop-blur-sm`}
+              className={`relative group transition-all duration-300 border-2 border-border/50 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 bg-card/50 backdrop-blur-sm`}
             >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-                  <span className="bg-gradient-to-r from-primary to-blue-600 text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
-                    人気プラン
-                  </span>
-                </div>
-              )}
-              <div className={plan.popular ? 'absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-lg' : ''} />
               <CardHeader className="text-center pb-8 relative z-10">
                 <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
                 <CardDescription className="text-sm mb-6">
@@ -109,26 +93,28 @@ export function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                <Button
-                  className={`w-full transition-all duration-300 ${
-                    plan.popular
-                      ? 'bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40'
-                      : 'hover:bg-primary/10'
-                  }`}
-                  variant={plan.popular ? 'default' : 'outline'}
-                  size="lg"
-                >
-                  {plan.cta}
-                </Button>
+                {plan.ctaHref ? (
+                  <a href={plan.ctaHref} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      className="w-full transition-all duration-300 hover:bg-primary/10"
+                      variant="outline"
+                      size="lg"
+                    >
+                      {plan.cta}
+                    </Button>
+                  </a>
+                ) : (
+                  <Button
+                    className="w-full transition-all duration-300 hover:bg-primary/10"
+                    variant="outline"
+                    size="lg"
+                  >
+                    {plan.cta}
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-sm text-muted-foreground">
-            全プランで14日間の無料トライアル実施中。クレジットカード登録不要。
-          </p>
         </div>
       </div>
     </section>
