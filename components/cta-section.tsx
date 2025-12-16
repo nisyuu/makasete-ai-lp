@@ -23,8 +23,8 @@ export function CTASection() {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            14日間の無料トライアルで、AIチャットボットの効果を体感してください。
-            クレジットカード登録不要で、今すぐ始められます。
+            AIチャットボットを無料で試してみてください。
+            セットアップが簡単で、今すぐ始められます。
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -33,7 +33,7 @@ export function CTASection() {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button size="lg" variant="outline" className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all">
-              資料をダウンロード
+              デモを見る
             </Button>
           </div>
 
@@ -50,7 +50,7 @@ export function CTASection() {
                   clipRule="evenodd"
                 />
               </svg>
-              クレジットカード不要
+              無料利用可能
             </div>
             <div className="flex items-center">
               <svg
@@ -64,21 +64,7 @@ export function CTASection() {
                   clipRule="evenodd"
                 />
               </svg>
-              14日間無料トライアル
-            </div>
-            <div className="flex items-center">
-              <svg
-                className="w-5 h-5 mr-2 text-primary"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              いつでもキャンセル可能
+              カスタマイズ可能
             </div>
           </div>
         </div>
