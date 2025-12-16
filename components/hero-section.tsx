@@ -29,7 +29,7 @@ export function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            音声とテキストで対応するAI販売員が、商品の相談から購入までをサポート。scriptタグを1行追加するだけで、今すぐECサイトに導入できます。
+            音声とテキストで対応するAI販売員が、商品の相談から購入までをサポート。簡単にECサイトへ導入できます。
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up" style={{ animationDelay: '0.4s' }}>
