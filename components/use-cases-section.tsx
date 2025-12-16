@@ -34,7 +34,7 @@ export function UseCasesSection() {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            あらゆる業種で活用可能
+            幅広い業種で導入可能です
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             商品の特性に合わせて、AIが最適な回答を提供します
