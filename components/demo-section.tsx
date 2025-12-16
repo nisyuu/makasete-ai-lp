@@ -37,9 +37,6 @@ export function DemoSection() {
               <p className="text-muted-foreground mb-6">
                 マイクに話しかけるだけで質問可能。AIが音声認識で内容を理解し、音声またはテキストで回答します。
               </p>
-              <div className="flex items-center text-sm text-primary font-medium">
-                <span>デモで試す</span>
-              </div>
             </div>
           </div>
 
