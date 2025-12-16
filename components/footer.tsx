@@ -19,7 +19,7 @@ export function Footer() {
     company: {
       title: '開発者情報',
       links: [
-        { label: 'X', href: 'https://x.com/nishilyuu' },
+        { label: 'Xアカウント', href: 'https://x.com/nishilyuu' },
       ],
     },
     // legal: {
