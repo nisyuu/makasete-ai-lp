@@ -8,16 +8,12 @@ export function Footer() {
         { label: '機能', href: '#features' },
         { label: 'デモ', href: '#demo' },
         { label: '料金', href: '#pricing' },
-        { label: '導入事例', href: '#' },
       ],
     },
     support: {
       title: 'サポート',
       links: [
-        { label: 'ヘルプセンター', href: '#' },
-        { label: 'FAQ', href: '#faq' },
-        { label: 'お問い合わせ', href: '#' },
-        { label: 'API ドキュメント', href: '#' },
+        { label: 'お問い合わせ', href: 'https://docs.google.com/forms/d/e/1FAIpQLScKzEYvBRXxZnmciBOWAoq9hTjQjswoxDAqkiIVHfw6mR2Ynw/viewform?usp=dialog' },
       ],
     },
     company: {
