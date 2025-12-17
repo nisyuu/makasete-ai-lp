@@ -20,10 +20,11 @@ export function PricingSection() {
     {
       name: 'おまかせプラン',
       description: '個人事業主・小規模ECサイト向け',
-      price: 'お値段準備中',
+      price: 'カスタム料金()',
       period: '',
       features: [
-        '機能準備中',
+        'AIチャットボット構築サポート',
+        ''
       ],
       cta: 'お問い合わせ',
       ctaHref: 'https://docs.google.com/forms/d/e/1FAIpQLScKzEYvBRXxZnmciBOWAoq9hTjQjswoxDAqkiIVHfw6mR2Ynw/viewform?usp=dialog',
