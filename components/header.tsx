@@ -38,12 +38,12 @@ export function Header() {
             >
               デモ
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection('how-it-works')}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
               導入方法
-            </button>
+            </button> */}
             <button
               onClick={() => scrollToSection('pricing')}
               className="text-sm font-medium hover:text-primary transition-colors"
