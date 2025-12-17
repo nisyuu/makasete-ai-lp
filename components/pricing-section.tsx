@@ -24,7 +24,7 @@ export function PricingSection() {
       period: '',
       features: [
         'AIチャットボット構築サポート',
-        ''
+        '運用サポートなど'
       ],
       cta: 'お問い合わせ',
       ctaHref: 'https://docs.google.com/forms/d/e/1FAIpQLScKzEYvBRXxZnmciBOWAoq9hTjQjswoxDAqkiIVHfw6mR2Ynw/viewform?usp=dialog',
