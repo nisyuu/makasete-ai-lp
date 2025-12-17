@@ -24,6 +24,8 @@ export function PricingSection() {
       period: '',
       features: [
         'AIチャットボット構築サポート',
+        '豊富な音声',
+        'カスタマイズサポート',
         '運用サポートなど'
       ],
       cta: 'お問い合わせ',
