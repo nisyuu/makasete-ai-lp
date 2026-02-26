@@ -13,7 +13,7 @@ export function Footer() {
     support: {
       title: 'サポート',
       links: [
-        { label: 'お問い合わせ', href: 'https://docs.google.com/forms/d/e/1FAIpQLScKzEYvBRXxZnmciBOWAoq9hTjQjswoxDAqkiIVHfw6mR2Ynw/viewform?usp=dialog' },
+        { label: 'お問い合わせ', href: 'https://aiform.nisyuu.com/view/PgMRN033hK9QkongeWWS' },
       ],
     },
     company: {
