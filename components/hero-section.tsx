@@ -50,7 +50,7 @@ export function HeroSection() {
           <div className="relative rounded-xl overflow-hidden border border-primary/20 shadow-2xl shadow-primary/10 animate-scale-in" style={{ animationDelay: '0.6s' }}>
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10 z-10" />
             <Image
-              src="/スクリーンショット_2025-12-16_13.52.55.png"
+              src="/hero-demo.png"
               alt="AI店員 福蔵デモ画面"
               width={1200}
               height={675}
