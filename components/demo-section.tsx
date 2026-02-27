@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, MessageCircle, Mic } from 'lucide-react';
+import { ArrowRight, MessageCircle, Mic } from 'lucide-react';
 
 export function DemoSection() {
   return (
@@ -22,7 +23,7 @@ export function DemoSection() {
               </div>
               <h3 className="text-xl font-semibold mb-3">テキストチャット</h3>
               <p className="text-muted-foreground mb-6">
-                商品に関する質問をテキストで入力すると、AIが即座に的確な回答を返します。サイズ、色、在庫状況など、あらゆる質問に対応。
+                商品に関する質問をテキストで入力すると、AIが即座に de 的確な回答を返します。サイズ、色、在庫状況など、あらゆる質問に対応。
               </p>
             </div>
 
@@ -38,13 +39,12 @@ export function DemoSection() {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="text-base px-8">
-              デモサイトを開く
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
-            <p className="text-sm text-muted-foreground mt-4">
-              　デモサイトで動作を体験できます
-            </p>
+            <Link href="/demo">
+              <Button size="lg" className="text-base px-8 group">
+                デモサイトを開く
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
