@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Book } from '@/types/demo';
 import { fetchBooks, getUniqueCategories } from '@/lib/demo/api';
 
-export default function BooksPage() {
+function BooksPageContent() {
   const [books, setBooks] = useState<Book[]>([]);
   const [filteredBooks, setFilteredBooks] = useState<Book[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
@@ -147,5 +147,17 @@ export default function BooksPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function BooksPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-[60vh]">
+        <div className="text-gray-600">読み込み中...</div>
+      </div>
+    }>
+      <BooksPageContent />
+    </Suspense>
   );
 }
