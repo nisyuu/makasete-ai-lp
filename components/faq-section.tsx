@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function FAQSection() {
   return (
@@ -16,9 +17,11 @@ export function FAQSection() {
             <p className="text-muted-foreground mb-6 text-lg">
               その他のご質問がございましたら、お気軽にお問い合わせください
             </p>
-            <Button variant="outline" size="lg">
-              お問い合わせ
-            </Button>
+            <Link href="https://aiform.nisyuu.com/view/PgMRN033hK9QkongeWWS" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg">
+                お問い合わせ
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
