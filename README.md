@@ -32,7 +32,7 @@ ECサイトの売上を最大化するAIチャットボット「Makasete AI」�
 - **Demo Site (読書福蔵)**: `/dokusho-fukuzo` パス配下 (`app/dokusho-fukuzo/`)
 
 ### 外部連携
-- **API**: 外部のデータ提供API (`https://ec-voice-bot-o6mypnfjrq-an.a.run.app/api`)
+- **API**: 外部のデータ提供API (`https://your-api-url.com/api`)
   - 本の一覧、ニュース記事の取得に使用
 - **AI Widget**: Makasete AI 自体のボットウィジェット (`widget.js`) をデモページに統合
 - **Analytics**: Google Tag Manager (G-ZLDXLJSPQ4 / G-DHY3JWPP9M)

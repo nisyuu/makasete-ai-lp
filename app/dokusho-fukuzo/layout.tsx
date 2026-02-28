@@ -39,7 +39,7 @@ export default function DokushoFukuzoLayout({
         `}
       </Script>
       <Script 
-        src="https://ec-voice-bot-o6mypnfjrq-an.a.run.app/public/widget.js"
+        src="https://makasete-bot-49773544105.asia-northeast1.run.app/public/widget.js"
         strategy="lazyOnload"
       />
       <Layout>{children}</Layout>
