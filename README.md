@@ -44,6 +44,10 @@ ECサイトの売上を最大化するAIチャットボット「Makasete AI」�
 # 依存関係のインストール
 pnpm install
 
+# 環境変数の設定 (ローカル開発用)
+# .env.local.example をコピーして .env.local を作成し、必要に応じて編集してください
+cp .env.local.example .env.local
+
 # 開発サーバーの起動
 pnpm dev
 ```

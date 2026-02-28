@@ -1,7 +1,7 @@
 import { Book, News } from '@/types/dokusho-fukuzo';
 import { withRetry } from '@/lib/dokusho-fukuzo/utils';
 
-const API_BASE_URL = 'https://makasete-bot-49773544105.asia-northeast1.run.app/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://makasete-bot-49773544105.asia-northeast1.run.app/api';
 
 export async function fetchBooks(): Promise<Book[]> {
   const fetcher = async () => {
