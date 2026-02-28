@@ -23,7 +23,7 @@ export function DemoSection() {
               </div>
               <h3 className="text-xl font-semibold mb-3">テキストチャット</h3>
               <p className="text-muted-foreground mb-6">
-                商品に関する質問をテキストで入力すると、AIが即座に de 的確な回答を返します。サイズ、色、在庫状況など、あらゆる質問に対応。
+                商品に関する質問をテキストで入力すると、AIが即座に的確な回答を返します。サイズ、色、在庫状況など、あらゆる質問に対応。
               </p>
             </div>
 
