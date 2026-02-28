@@ -3,8 +3,8 @@
 import { useEffect, useState, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { Book } from '@/types/demo';
-import { fetchBooks, getUniqueCategories } from '@/lib/demo/api';
+import { Book } from '@/types/dokusho-fukuzo';
+import { fetchBooks, getUniqueCategories } from '@/lib/dokusho-fukuzo/api';
 
 function BooksPageContent() {
   const [books, setBooks] = useState<Book[]>([]);
@@ -117,7 +117,7 @@ function BooksPageContent() {
             <button
               onClick={() => {
                 setSelectedCategory('all');
-                router.push('/demo/books');
+                router.push('/dokusho-fukuzo/books');
               }}
               className="text-gray-900 hover:underline"
             >
@@ -130,7 +130,7 @@ function BooksPageContent() {
           {filteredBooks.map((book) => (
             <Link
               key={book.id}
-              href={`/demo/books/${book.id}`}
+              href={`/dokusho-fukuzo/books/${book.id}`}
               className="group"
             >
               <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">

@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { Book } from '@/types/demo';
-import { fetchBooks } from '@/lib/demo/api';
+import { Book } from '@/types/dokusho-fukuzo';
+import { fetchBooks } from '@/lib/dokusho-fukuzo/api';
 import { ExternalLink, ArrowLeft } from 'lucide-react';
 
 export default function BookDetailPage() {
@@ -58,7 +58,7 @@ export default function BookDetailPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <p className="text-center text-red-600">{error}</p>
         <div className="text-center mt-4">
-          <Link href="/demo/books" className="text-gray-900 hover:underline">
+          <Link href="/dokusho-fukuzo/books" className="text-gray-900 hover:underline">
             本一覧へ戻る
           </Link>
         </div>
@@ -71,7 +71,7 @@ export default function BookDetailPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
           <h1 className="text-2xl font-semibold text-gray-900 mb-4">本が見つかりませんでした</h1>
-          <Link href="/demo/books" className="text-gray-700 hover:text-gray-900 underline">
+          <Link href="/dokusho-fukuzo/books" className="text-gray-700 hover:text-gray-900 underline">
             本一覧へ戻る
           </Link>
         </div>
@@ -82,7 +82,7 @@ export default function BookDetailPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <Link
-        href="/demo/books"
+        href="/dokusho-fukuzo/books"
         className="inline-flex items-center space-x-2 text-gray-700 hover:text-gray-900 mb-8 transition-colors"
       >
         <ArrowLeft className="h-4 w-4" />
@@ -156,7 +156,7 @@ export default function BookDetailPage() {
             {relatedBooks.map((relatedBook) => (
               <Link
                 key={relatedBook.id}
-                href={`/demo/books/${relatedBook.id}`}
+                href={`/dokusho-fukuzo/books/${relatedBook.id}`}
                 className="group"
               >
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">

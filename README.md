@@ -29,7 +29,7 @@ ECサイトの売上を最大化するAIチャットボット「Makasete AI」�
 本プロジェクトは、Next.jsのApp Routerを採用したシングルリポジトリ構成です。
 
 - **Landing Page**: ルートディレクトリ (`app/page.tsx`)
-- **Demo Site (読書福蔵)**: `/demo` パス配下 (`app/demo/`)
+- **Demo Site (読書福蔵)**: `/dokusho-fukuzo` パス配下 (`app/dokusho-fukuzo/`)
 
 ### 外部連携
 - **API**: 外部のデータ提供API (`https://ec-voice-bot-o6mypnfjrq-an.a.run.app/api`)

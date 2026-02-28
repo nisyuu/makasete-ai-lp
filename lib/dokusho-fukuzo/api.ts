@@ -1,5 +1,5 @@
-import { Book, News } from '@/types/demo';
-import { withRetry } from '@/lib/demo/utils';
+import { Book, News } from '@/types/dokusho-fukuzo';
+import { withRetry } from '@/lib/dokusho-fukuzo/utils';
 
 const API_BASE_URL = 'https://ec-voice-bot-o6mypnfjrq-an.a.run.app/api';
 

@@ -33,7 +33,7 @@ export function Header() {
               機能
             </button>
             <button
-              onClick={() => scrollToSection('demo')}
+              onClick={() => scrollToSection('dokusho-fukuzo')}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
               デモ
@@ -83,7 +83,7 @@ export function Header() {
               機能
             </button>
             <button
-              onClick={() => scrollToSection('demo')}
+              onClick={() => scrollToSection('dokusho-fukuzo')}
               className="text-sm font-medium hover:text-primary transition-colors text-left"
             >
               デモ

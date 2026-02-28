@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { fetchNews } from "@/lib/demo/api";
-import { News } from "@/types/demo";
+import { fetchNews } from "@/lib/dokusho-fukuzo/api";
+import { News } from "@/types/dokusho-fukuzo";
 
 export default function NewsPage() {
   const [newsItems, setNewsItems] = useState<News[]>([]);
@@ -69,7 +69,7 @@ export default function NewsPage() {
           {newsItems.map((news) => (
             <Link
               key={news.id}
-              href={`/demo/news/${news.id}`}
+              href={`/dokusho-fukuzo/news/${news.id}`}
               className="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100"
             >
               <p className="text-sm text-gray-500 mb-2">

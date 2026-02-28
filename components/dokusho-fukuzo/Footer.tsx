@@ -23,19 +23,19 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-900 mb-4">サイトマップ</h4>
             <nav className="flex flex-col space-y-2">
               <Link
-                href="/demo"
+                href="/dokusho-fukuzo"
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
               >
                 トップ
               </Link>
               <Link
-                href="/demo/books"
+                href="/dokusho-fukuzo/books"
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
               >
                 本一覧
               </Link>
               <Link
-                href="/demo/news"
+                href="/dokusho-fukuzo/news"
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
               >
                 ニュース

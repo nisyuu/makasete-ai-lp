@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Book, News } from "@/types/demo";
-import { fetchBooks, fetchNews } from "@/lib/demo/api";
+import { Book, News } from "@/types/dokusho-fukuzo";
+import { fetchBooks, fetchNews } from "@/lib/dokusho-fukuzo/api";
 import { ArrowRight } from "lucide-react";
 
 export default function HomePage() {
@@ -66,7 +66,7 @@ export default function HomePage() {
             皆さんの本棚のスキマをお埋めします。いいえ、お金は一銭もいただきません。お客様が満足されたらそれが何よりの報酬でございます。
           </p>
           <Link
-            href="/demo/books"
+            href="/dokusho-fukuzo/books"
             className="inline-flex items-center space-x-2 bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors"
           >
             <span>本を探す</span>
@@ -87,7 +87,7 @@ export default function HomePage() {
               </h2>
             </div>
             <Link
-              href="/demo/news"
+              href="/dokusho-fukuzo/news"
               className="inline-flex items-center space-x-2 text-gray-900 font-semibold hover:translate-x-1 transition-transform"
             >
               <span>すべてのニュースを見る</span>
@@ -104,7 +104,7 @@ export default function HomePage() {
               {news.map((item) => (
                 <Link
                   key={item.id}
-                  href={`/demo/news/${item.id}`}
+                  href={`/dokusho-fukuzo/news/${item.id}`}
                   className="bg-neutral-50 border border-gray-100 rounded-2xl p-6 hover:border-gray-300 hover:bg-white transition-colors"
                 >
                   <p className="text-sm text-gray-500 mb-2">
@@ -133,7 +133,7 @@ export default function HomePage() {
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
               {books.map((book) => (
-                <Link key={book.id} href={`/demo/books/${book.id}`} className="group">
+                <Link key={book.id} href={`/dokusho-fukuzo/books/${book.id}`} className="group">
                   <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
                     <div className="p-4">
                       <h3 className="font-serif font-semibold text-gray-900 mb-1 line-clamp-2 group-hover:text-gray-700 transition-colors">

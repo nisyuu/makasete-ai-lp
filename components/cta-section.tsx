@@ -35,7 +35,7 @@ export function CTASection() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
-            <Link href="/demo">
+            <Link href="/dokusho-fukuzo">
               <Button size="lg" variant="outline" className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all">
                 <Play className="mr-2 h-5 w-5" />
                 デモを見る

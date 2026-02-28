@@ -6,7 +6,7 @@ export function Footer() {
       title: '製品',
       links: [
         { label: '機能', href: '#features' },
-        { label: 'デモ', href: '#demo' },
+        { label: 'デモ', href: '#dokusho-fukuzo' },
         { label: '料金', href: '#pricing' },
       ],
     },

@@ -1,7 +1,7 @@
 import { Header } from '@/components/header';
 import { HeroSection } from '@/components/hero-section';
 import { FeaturesSection } from '@/components/features-section';
-import { DemoSection } from '@/components/demo-section';
+import { DokushoFukuzoSection } from '@/components/dokusho-fukuzo-section';
 // import { HowItWorksSection } from '@/components/how-it-works-section';
 import { UseCasesSection } from '@/components/use-cases-section';
 import { BenefitsSection } from '@/components/benefits-section';
@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <FeaturesSection />
-        <DemoSection />
+        <DokushoFukuzoSection />
         {/* <HowItWorksSection /> */}
         <UseCasesSection />
         <BenefitsSection />

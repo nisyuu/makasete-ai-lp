@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { News } from '@/types/demo';
-import { fetchNews } from '@/lib/demo/api';
+import { News } from '@/types/dokusho-fukuzo';
+import { fetchNews } from '@/lib/dokusho-fukuzo/api';
 import { ArrowLeft } from 'lucide-react';
 
 export default function NewsDetailPage() {
@@ -50,7 +50,7 @@ export default function NewsDetailPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <p className="text-center text-red-600">{error}</p>
         <div className="text-center mt-4">
-          <Link href="/demo/news" className="text-gray-900 hover:underline">
+          <Link href="/dokusho-fukuzo/news" className="text-gray-900 hover:underline">
             ニュース一覧に戻る
           </Link>
         </div>
@@ -63,7 +63,7 @@ export default function NewsDetailPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <p className="text-center text-gray-600">ニュースが見つかりませんでした。</p>
         <div className="text-center mt-4">
-          <Link href="/demo/news" className="text-gray-900 hover:underline">
+          <Link href="/dokusho-fukuzo/news" className="text-gray-900 hover:underline">
             ニュース一覧に戻る
           </Link>
         </div>
@@ -74,7 +74,7 @@ export default function NewsDetailPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <Link
-        href="/demo/news"
+        href="/dokusho-fukuzo/news"
         className="inline-flex items-center space-x-2 text-gray-700 hover:text-gray-900 mb-6"
       >
         <ArrowLeft className="h-4 w-4" />

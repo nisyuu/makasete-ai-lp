@@ -39,7 +39,7 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Link href="/demo">
+            <Link href="/dokusho-fukuzo">
               <Button size="lg" variant="outline" className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all">
                 <Play className="mr-2 h-5 w-5" />
                 デモを見る
@@ -50,7 +50,7 @@ export function HeroSection() {
           <div className="relative rounded-xl overflow-hidden border border-primary/20 shadow-2xl shadow-primary/10 animate-scale-in" style={{ animationDelay: '0.6s' }}>
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10 z-10" />
             <Image
-              src="/hero-demo.png"
+              src="/hero-dokusho-fukuzo.png"
               alt="AI店員 福蔵デモ画面"
               width={1200}
               height={675}

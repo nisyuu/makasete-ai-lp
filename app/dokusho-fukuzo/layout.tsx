@@ -1,4 +1,4 @@
-import Layout from '@/components/demo/Layout';
+import Layout from '@/components/dokusho-fukuzo/Layout';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function DemoLayout({
+export default function DokushoFukuzoLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -30,7 +30,7 @@ export default function DemoLayout({
         src="https://www.googletagmanager.com/gtag/js?id=G-DHY3JWPP9M"
         strategy="afterInteractive"
       />
-      <Script id="google-analytics-demo" strategy="afterInteractive">
+      <Script id="google-analytics-dokusho-fukuzo" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

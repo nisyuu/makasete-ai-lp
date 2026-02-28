@@ -14,7 +14,7 @@ export default function Header() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      router.push(`/demo/books?search=${encodeURIComponent(searchQuery)}`);
+      router.push(`/dokusho-fukuzo/books?search=${encodeURIComponent(searchQuery)}`);
       setIsSearchOpen(false);
       setSearchQuery('');
     }
@@ -24,19 +24,19 @@ export default function Header() {
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/demo" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+          <Link href="/dokusho-fukuzo" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <BookOpen className="h-8 w-8 text-gray-800" />
             <span className="text-xl font-semibold text-gray-900">読書福蔵</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/demo" className="text-gray-700 hover:text-gray-900 transition-colors">
+            <Link href="/dokusho-fukuzo" className="text-gray-700 hover:text-gray-900 transition-colors">
               トップ
             </Link>
-            <Link href="/demo/books" className="text-gray-700 hover:text-gray-900 transition-colors">
+            <Link href="/dokusho-fukuzo/books" className="text-gray-700 hover:text-gray-900 transition-colors">
               本一覧
             </Link>
-            <Link href="/demo/news" className="text-gray-700 hover:text-gray-900 transition-colors">
+            <Link href="/dokusho-fukuzo/news" className="text-gray-700 hover:text-gray-900 transition-colors">
               ニュース
             </Link>
           </nav>
@@ -89,21 +89,21 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
               <Link
-                href="/demo"
+                href="/dokusho-fukuzo"
                 className="text-gray-700 hover:text-gray-900 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 トップ
               </Link>
               <Link
-                href="/demo/books"
+                href="/dokusho-fukuzo/books"
                 className="text-gray-700 hover:text-gray-900 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 本一覧
               </Link>
               <Link
-                href="/demo/news"
+                href="/dokusho-fukuzo/news"
                 className="text-gray-700 hover:text-gray-900 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
