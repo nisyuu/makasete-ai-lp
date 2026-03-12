@@ -20,11 +20,10 @@ export function PricingSection() {
     {
       name: 'おまかせプラン',
       description: '個人事業主・小規模ECサイト向け',
-      price: '準備中',
+      price: 'お問い合わせ受付中',
       period: '',
       features: [
         'AIチャットボット構築サポート',
-        '豊富な音声',
         'カスタマイズサポート',
         '運用サポートなど'
       ],
