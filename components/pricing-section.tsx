@@ -29,7 +29,7 @@ export function PricingSection() {
         '運用サポートなど'
       ],
       cta: 'お問い合わせ',
-      ctaHref: 'https://docs.google.com/forms/d/e/1FAIpQLScKzEYvBRXxZnmciBOWAoq9hTjQjswoxDAqkiIVHfw6mR2Ynw/viewform?usp=dialog',
+      ctaHref: 'https://aiform.nisyuu.com/view/PgMRN033hK9QkongeWWS',
       popular: false,
     },
   ];
