@@ -19,8 +19,8 @@ export function PricingSection() {
     },
     {
       name: 'おまかせプラン',
-      description: '個人事業主・小規模ECサイト向け',
-      price: 'お問い合わせ受付中',
+      description: '小規模・中規模サイト向け',
+      price: '月額19,800円〜（初期費用0円キャンペーン中！）',
       period: '',
       features: [
         'AIチャットボット構築サポート',
