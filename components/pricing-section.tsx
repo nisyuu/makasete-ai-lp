@@ -20,9 +20,10 @@ export function PricingSection() {
     {
       name: 'おまかせプラン',
       description: '小規模・中規模サイト向け',
-      price: '月額19,800円〜（初期費用0円キャンペーン中！）',
+      price: '月額19,800円〜',
       period: '',
       features: [
+        '初期費用0円キャンペーン中！',
         'AIチャットボット構築サポート',
         'カスタマイズサポート',
         '運用サポートなど'
