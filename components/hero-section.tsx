@@ -74,7 +74,7 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10 z-10" />
             <Image
               src="/hero-dokusho-fukuzo.png"
-              alt="AI店員 福蔵デモ画面"
+              alt="デモ画面"
               width={1200}
               height={675}
               className="w-full h-auto object-cover"
