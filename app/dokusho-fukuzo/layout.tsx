@@ -39,7 +39,7 @@ export default function DokushoFukuzoLayout({
         `}
       </Script>
       <Script 
-        src={process.env.NEXT_PUBLIC_WIDGET_URL || "https://makasete-bot-dokusho-fukuzo-49773544105.asia-northeast1.run.app/public/widget.js"}
+        src={process.env.NEXT_PUBLIC_WIDGET_URL || "https://makasete-ai-dokusho-fukuzo-krxepxnw4q-an.a.run.app/public/widget.js"}
         strategy="lazyOnload"
       />
       <Layout>{children}</Layout>
