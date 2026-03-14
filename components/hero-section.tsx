@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Play, Sparkles } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Play, Sparkles } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -9,14 +9,17 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10 animate-gradient" />
 
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse-slow" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
+      <div
+        className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-slow"
+        style={{ animationDelay: "1s" }}
+      />
 
       <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center px-4 py-2 mb-8 bg-primary/20 border border-primary/30 rounded-full animate-slide-up backdrop-blur-sm">
             <Sparkles className="w-4 h-4 text-primary mr-2 animate-pulse" />
             <span className="text-sm font-medium text-primary">
-              ECサイトの売上を最大化する新しい方法
+              スプレッドシートで管理ができるAIチャットボット
             </span>
           </div>
 
@@ -28,26 +31,46 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            音声とテキストで対応するAI販売員が、商品の相談から購入までをサポート。簡単にECサイトへ導入できます。
+          <p
+            className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up"
+            style={{ animationDelay: "0.2s" }}
+          >
+            スプレッドシートで管理ができるAIチャットボット。簡単にお客様のサイトへ導入できます。
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <Link href="https://github.com/nisyuu/makasete-ai" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="text-base px-8 group bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 duration-300">
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up"
+            style={{ animationDelay: "0.4s" }}
+          >
+            <Link
+              href="https://github.com/nisyuu/makasete-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                className="text-base px-8 group bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 duration-300"
+              >
                 無料で始める
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             <Link href="/dokusho-fukuzo">
-              <Button size="lg" variant="outline" className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all"
+              >
                 <Play className="mr-2 h-5 w-5" />
                 デモを見る
               </Button>
             </Link>
           </div>
 
-          <div className="relative rounded-xl overflow-hidden border border-primary/20 shadow-2xl shadow-primary/10 animate-scale-in" style={{ animationDelay: '0.6s' }}>
+          <div
+            className="relative rounded-xl overflow-hidden border border-primary/20 shadow-2xl shadow-primary/10 animate-scale-in"
+            style={{ animationDelay: "0.6s" }}
+          >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10 z-10" />
             <Image
               src="/hero-dokusho-fukuzo.png"

@@ -1,26 +1,27 @@
-import { MessageSquare } from 'lucide-react';
+import { MessageSquare } from "lucide-react";
 
 export function Footer() {
   const footerLinks = {
     product: {
-      title: '製品',
+      title: "製品",
       links: [
-        { label: '機能', href: '#features' },
-        { label: 'デモ', href: '#dokusho-fukuzo' },
-        { label: '料金', href: '#pricing' },
+        { label: "機能", href: "#features" },
+        { label: "デモ", href: "#dokusho-fukuzo" },
+        { label: "料金", href: "#pricing" },
       ],
     },
     support: {
-      title: 'サポート',
+      title: "サポート",
       links: [
-        { label: 'お問い合わせ', href: 'https://aiform.nisyuu.com/view/PgMRN033hK9QkongeWWS' },
+        {
+          label: "お問い合わせ",
+          href: "https://aiform.nisyuu.com/view/PgMRN033hK9QkongeWWS",
+        },
       ],
     },
     company: {
-      title: '開発者情報',
-      links: [
-        { label: 'Xアカウント', href: 'https://x.com/nishilyuu' },
-      ],
+      title: "開発者情報",
+      links: [{ label: "Xアカウント", href: "https://x.com/nishilyuu" }],
     },
     // legal: {
     //   title: '法的情報',
@@ -43,7 +44,7 @@ export function Footer() {
               <span className="text-lg font-bold">Makasete AI</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              ECサイトの売上を最大化する
+              スプレッドシートで管理ができるAIチャットボット
               <br />
               AIチャットボットソリューション
             </p>

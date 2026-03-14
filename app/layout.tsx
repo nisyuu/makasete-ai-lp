@@ -1,37 +1,47 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Script from 'next/script';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Script from "next/script";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
-  title: 'Makasete AI - ECサイトの売上を最大化するAIチャットボット',
-  description: '音声とテキストで対応するAI販売員が、商品の相談から購入までをサポート。簡単にECサイトへ導入できます。個人事業主や中小企業に最適なソリューションです。',
-  keywords: ['AIチャットボット', 'ECサイト', 'AI販売員', '音声チャット', '売上向上', 'カスタマーサポート'],
+  metadataBase: new URL("http://localhost:3000"),
+  title: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
+  description:
+    "スプレッドシートで管理ができるAIチャットボット。簡単にお客様のサイトへ導入できます。",
+  keywords: [
+    "AIチャットボット",
+    "ECサイト",
+    "AI販売員",
+    "音声チャット",
+    "スプレッドシート",
+    "カスタマーサポート",
+  ],
   openGraph: {
-    title: 'Makasete AI - ECサイトの売上を最大化',
-    description: 'AIチャットボットで24時間お客様対応。簡単導入で売上アップを実現',
-    type: 'website',
-    locale: 'ja_JP',
+    title: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
+    description:
+      "AIチャットボットで24時間お客様対応。簡単導入で売上アップを実現",
+    type: "website",
+    locale: "ja_JP",
     images: [
       {
-        url: '/ogp-dokusho-fukuzo.png',
+        url: "/ogp-dokusho-fukuzo.png",
         width: 1200,
         height: 630,
-        alt: 'Makasete AI - ECサイトの売上を最大化するAIチャットボット',
+        alt: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Makasete AI - ECサイトの売上を最大化',
-    description: 'AIチャットボットで24時間お客様対応。簡単導入で売上アップを実現',
+    card: "summary_large_image",
+    title: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
+    description:
+      "AIチャットボットで24時間お客様対応。簡単導入で売上アップを実現",
     images: [
       {
-        url: '/ogp-dokusho-fukuzo.png',
-        alt: 'Makasete AI - ECサイトの売上を最大化するAIチャットボット',
+        url: "/ogp-dokusho-fukuzo.png",
+        alt: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
       },
     ],
   },
