@@ -42,27 +42,23 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <Link
-              href="https://github.com/nisyuu/makasete-ai"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="/dokusho-fukuzo" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
-                className="text-base px-8 group bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 duration-300"
+                className="text-base px-10 group bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 duration-300"
               >
-                無料で始める
+                <Play className="mr-2 h-5 w-5" />
+                デモを見る
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Link href="/dokusho-fukuzo">
+            <Link href="/guide">
               <Button
                 size="lg"
                 variant="outline"
                 className="text-base px-8 border-primary/30 hover:bg-primary/10 hover:border-primary transition-all"
               >
-                <Play className="mr-2 h-5 w-5" />
-                デモを見る
+                導入ガイド
               </Button>
             </Link>
           </div>

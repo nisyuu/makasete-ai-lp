@@ -59,8 +59,8 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="https://github.com/nisyuu/makasete-ai" target="_blank" rel="noopener noreferrer">
-              <Button size="sm">無料で始める</Button>
+            <Link href="/dokusho-fukuzo" target="_blank" rel="noopener noreferrer">
+              <Button size="sm">デモを見る</Button>
             </Link>
           </div>
 
@@ -107,8 +107,8 @@ export function Header() {
               FAQ
             </button>
             <div className="flex flex-col space-y-2 pt-4">
-              <Link href="https://github.com/nisyuu/makasete-ai" target="_blank" rel="noopener noreferrer" className="w-full">
-                <Button size="sm" className="w-full">無料で始める</Button>
+              <Link href="/dokusho-fukuzo" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button size="sm" className="w-full">デモを見る</Button>
               </Link>
             </div>
           </nav>

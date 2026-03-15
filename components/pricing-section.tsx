@@ -1,41 +1,47 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Check } from "lucide-react";
 
 export function PricingSection() {
   const plans = [
     {
-      name: 'でまかせプラン',
-      description: '開発者向け',
-      price: '無料',
-      period: '',
-      features: [
-        'オープンソースからご自身で構築',
-        '自由にカスタマイズ可能',
-      ],
-      cta: '無料で始める',
-      ctaHref: 'https://github.com/nisyuu/makasete-ai',
+      name: "でまかせプラン",
+      description: "開発者向け",
+      price: "無料",
+      period: "",
+      features: ["オープンソースからご自身で構築", "自由にカスタマイズ可能"],
+      cta: "でまかせ導入ガイド",
+      ctaHref: "https://nisyuu.github.io/makasete-ai",
       popular: false,
     },
     {
-      name: 'おまかせプラン',
-      description: '小規模・中規模サイト向け',
-      price: '月額19,800円〜',
-      period: '',
+      name: "おまかせプラン",
+      description: "小規模・中規模サイト向け",
+      price: "月額19,800円〜",
+      period: "",
       features: [
-        '初期費用0円キャンペーン中！',
-        'AIチャットボット構築サポート',
-        'カスタマイズサポート',
-        '運用サポートなど'
+        "初期費用0円キャンペーン中！",
+        "AIチャットボット構築サポート",
+        "カスタマイズサポート",
+        "運用サポートなど",
       ],
-      cta: 'お問い合わせ',
-      ctaHref: 'https://aiform.nisyuu.com/view/PgMRN033hK9QkongeWWS',
+      cta: "おまかせ導入ガイド",
+      ctaHref: "/guide",
       popular: false,
     },
   ];
 
   return (
-    <section id="pricing" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section
+      id="pricing"
+      className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
@@ -61,7 +67,9 @@ export function PricingSection() {
                   {plan.description}
                 </CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">{plan.price}</span>
+                  <span className="text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">
+                    {plan.price}
+                  </span>
                   {plan.period && (
                     <span className="text-muted-foreground">{plan.period}</span>
                   )}
@@ -77,7 +85,11 @@ export function PricingSection() {
                   ))}
                 </ul>
                 {plan.ctaHref ? (
-                  <a href={plan.ctaHref} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={plan.ctaHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button
                       className="w-full transition-all duration-300 hover:bg-primary/10"
                       variant="outline"

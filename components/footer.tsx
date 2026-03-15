@@ -17,6 +17,18 @@ export function Footer() {
           label: "お問い合わせ",
           href: "https://aiform.nisyuu.com/view/PgMRN033hK9QkongeWWS",
         },
+        {
+          label: "利用規約",
+          href: "https://www.notion.so/alwaysblue/3249b67a63a28022bc91ea32adb76e64?source=copy_link",
+        },
+        {
+          label: "プライバシーポリシー",
+          href: "https://www.notion.so/alwaysblue/3249b67a63a2808b9088ebe4a1c33263?source=copy_link",
+        },
+        {
+          label: "特定商取引法に基づく表記",
+          href: "https://www.notion.so/alwaysblue/3249b67a63a280ffb1b9ea27ac5e2ee5?source=copy_link",
+        },
       ],
     },
     company: {
@@ -58,6 +70,8 @@ export function Footer() {
                   <li key={index}>
                     <a
                       href={link.href}
+                      target={link.href.startsWith('http') ? "_blank" : undefined}
+                      rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
                       {link.label}
