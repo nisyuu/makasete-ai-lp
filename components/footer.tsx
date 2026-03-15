@@ -44,7 +44,7 @@ export function Footer() {
               <span className="text-lg font-bold">Makasete AI</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              スプレッドシートで管理ができるAIチャットボット
+              スプレッドシートで管理できるAIチャットボット
               <br />
               AIチャットボットソリューション
             </p>

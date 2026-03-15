@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
   title: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
   description:
-    "スプレッドシートで管理ができるAIチャットボット。簡単にお客様のサイトへ導入できます。",
+    "スプレッドシートで管理できるAIチャットボット。簡単にお客様のサイトへ導入できます。",
   keywords: [
     "AIチャットボット",
     "ECサイト",

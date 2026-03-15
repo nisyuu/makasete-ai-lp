@@ -19,7 +19,7 @@ export function HeroSection() {
           <div className="inline-flex items-center px-4 py-2 mb-8 bg-primary/20 border border-primary/30 rounded-full animate-slide-up backdrop-blur-sm">
             <Sparkles className="w-4 h-4 text-primary mr-2 animate-pulse" />
             <span className="text-sm font-medium text-primary">
-              スプレッドシートで管理ができるAIチャットボット
+              スプレッドシートで管理できるAIチャットボット
             </span>
           </div>
 
@@ -35,7 +35,7 @@ export function HeroSection() {
             className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up"
             style={{ animationDelay: "0.2s" }}
           >
-            スプレッドシートで管理ができるAIチャットボット。簡単にお客様のサイトへ導入できます。
+            スプレッドシートで管理できるAIチャットボット。簡単にお客様のサイトへ導入できます。
           </p>
 
           <div
