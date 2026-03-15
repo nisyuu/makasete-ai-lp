@@ -89,19 +89,7 @@ export default async function Image() {
           >
             スプレッドシートで始める、一歩先のAI接客
           </p>
-          
-          <div
-          style={{
-            position: 'absolute',
-            bottom: '40px',
-            right: '60px',
-            color: 'rgba(255, 255, 255, 0.2)',
-            fontFamily: 'monospace',
-            fontSize: '24px',
-          }}
-          >
-          01 / 12
-          </div>        </div>
+        </div>
       </div>
     ),
     {
