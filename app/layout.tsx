@@ -6,7 +6,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://makasete-ai.nisyuu.com"),
   title: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
   description:
     "スプレッドシートで管理できるAIチャットボット。簡単にお客様のサイトへ導入できます。",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     images: [
       {
-        url: "/ogp-dokusho-fukuzo.png",
+        url: "/ogp.jpeg",
         width: 1200,
         height: 630,
         alt: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "AIチャットボットで24時間お客様対応。簡単導入で売上アップを実現",
     images: [
       {
-        url: "/ogp-dokusho-fukuzo.png",
+        url: "/ogp.jpeg",
         alt: "Makasete AI - スプレッドシートで管理できるAIチャットボット",
       },
     ],

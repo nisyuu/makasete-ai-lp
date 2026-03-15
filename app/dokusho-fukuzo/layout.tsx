@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: '読書福蔵',
     description: '皆さんの本棚のスキマをお埋めします。いいえ、お金は一銭もいただきません。お客様が満足されたらそれが何よりの報酬でございます。',
-    images: ['/スクリーンショット_2025-12-16_18.37.16.png'],
+    images: ['/ogp-dokusho-fukuzo.png'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: '読書福蔵',
     description: '皆さんの本棚のスキマをお埋めします。いいえ、お金は一銭もいただきません。お客様が満足されたらそれが何よりの報酬でございます。',
-    images: ['/スクリーンショット_2025-12-16_18.37.16.png'],
+    images: ['/ogp-dokusho-fukuzo.png'],
   },
 };
 
